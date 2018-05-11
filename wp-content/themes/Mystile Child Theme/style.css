@@ -145,7 +145,7 @@ html.boxed body {
 	padding-left: 10px;
 	text-decoration: underline;
 }
-#content #main {
+.home #content #main {
 	width: 100%;
 	text-align: center;
 }
@@ -205,4 +205,24 @@ ul.nav li.search-box-list ul {
 }
 .woo-vpf-filter-vertical .woo-vpf-field input[type=text] {
 	margin-left: 0px;
+}
+
+.entry ul.center-bullet {
+	display: inline-block;
+}
+#breadcrumbs {
+	padding-top: 20px;
+}
+
+
+@media only screen and (min-width: 768px) {
+	#wrapper #content {
+		max-width: 75%;
+	}
+	#main .type-post .post-content {
+	    float: left;
+	}
+	#main #post-entries {
+		float: left;
+	}
 }

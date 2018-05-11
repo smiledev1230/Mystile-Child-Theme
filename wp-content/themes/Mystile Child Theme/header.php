@@ -64,9 +64,9 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
 					echo '<ul class="nav wc-nav">';
 					echo get_search_form();
 					echo "<li class='search-box-list'>
-							<div><a href='".home_url( '/' )."shop/?search_type=1'>Products</a></div>
-							<div><a href='".home_url( '/' )."shop/?search_type=2'>Enter part #</a></div>
-							<div><a href='".home_url( '/' )."product-category/sanden/sanden-compressors/?search_type=3'>Enter Sanden Model #</a></div>
+							<div><a href='".home_url( '/' )."?s=&post_type=product&search_type=1'>Products</a></div>
+							<div><a href='".home_url( '/' )."shop/?s=&post_type=product&search_type=2'>Enter part #</a></div>
+							<div><a href='".home_url( '/' )."product-category/sanden/sanden-compressors/?s=&post_type=product&search_type=3'>Enter Sanden Model #</a></div>
 						</li>";
 					echo '</ul>';
 				}
