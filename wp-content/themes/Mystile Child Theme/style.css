@@ -213,7 +213,9 @@ ul.nav li.search-box-list ul {
 #breadcrumbs {
 	padding-top: 20px;
 }
-
+.single-product.layout-full #main {
+	max-width: 100%;
+}
 
 @media only screen and (min-width: 768px) {
 	#wrapper #content {
@@ -224,5 +226,11 @@ ul.nav li.search-box-list ul {
 	}
 	#main #post-entries {
 		float: left;
+	}
+	.single-product.layout-full .summary {
+	    width: 60%;
+	}
+	.single-product.layout-full .images {
+		width: 36%;
 	}
 }
