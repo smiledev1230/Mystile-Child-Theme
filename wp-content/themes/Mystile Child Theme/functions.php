@@ -76,4 +76,15 @@ if (!function_exists( 'the_child_widgets_init')) {
 }
 
 add_action( 'init', 'the_child_widgets_init', 1000 );
+add_action('woo_main_before', 'add_category_links', 1100);
+function add_category_links() {
+	?>
+	<section class="entry"> 
+        <div class="quick-link " id="woocommerce_product_categories2-2">
+            <h3>PRODUCT QUICK LINKS</h3>
+            <?php woo_sidebar( 'quick_links' );  ?>                 
+        </div>
+    </section>  
+    <?php 
+}
 ?>

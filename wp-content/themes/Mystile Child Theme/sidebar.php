@@ -21,16 +21,10 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
 
 	<?php woo_sidebar_inside_before(); ?>
 
-	<?php if ( woo_active_sidebar( 'primary' ) ) { ?>
-    <div class="primary">
-    	<?php 	echo "<div class='widget woocommerce widget_product_search'>";
-				echo do_shortcode('[woo_vpf_filter title="Part Search" view="V" label_make="Select Make" label_model="Select Model" show_year="true/false" label_year="Select Year" show_engine="true/false" label_engine="Select Engine" show_category="true/false" label_category="Select Category" show_keyword="true" label_keyword="Search products..." show_my_vehicles="" label_search="Search" label_reset_search="Reset Search"]');
-				echo "</div>";
-		?>
-		<?php woo_sidebar( 'primary' );  ?>
-	</div>        
-	<?php } // End IF Statement ?>   
-	
+	<?php 	echo "<div class='widget woocommerce widget_product_search'>";
+			echo do_shortcode('[woo_vpf_filter title="Part Search" view="V" label_make="Select Make" label_model="Select Model" show_year="true/false" label_year="Select Year" show_engine="true/false" label_engine="Select Engine" show_category="true/false" label_category="Select Category" show_keyword="true" label_keyword="Search products..." show_my_vehicles="" label_search="Search" label_reset_search="Reset Search"]');
+			echo "</div>";
+	?>	
 	<?php woo_sidebar_inside_after(); ?> 
 	
 </aside><!-- /#sidebar -->
